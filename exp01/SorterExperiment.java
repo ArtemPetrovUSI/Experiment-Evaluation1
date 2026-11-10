@@ -150,7 +150,7 @@ public class SorterExperiment {
             for (int j = 0; j < amtArrS; j++) {
                 long currSeed = startSeed + i; // seed changes over time, for sake of LoLN.
 
-                Integer[] random = randomIntegers(arrS[j], 0, currSeed);
+                Integer[] random = randomIntegers(arrS[j], 99999, currSeed);
                 Integer[] asc = sortedIntegers(arrS[j], currSeed);
                 Integer[] desc = getReverse(asc);
                 Integer[] nS = reshuffle(asc, currSeed, entropy);
