@@ -25,6 +25,7 @@ public class SorterExperiment {
         return values;
     }
 
+    // Yes, reshuffle was made with AI assistance, too.
     /// A function to randomize sorted arrays
     /// It swaps non-overlaping adjacent elements
     /// @param array array to clone and reshuffle
@@ -275,8 +276,8 @@ public class SorterExperiment {
 
 
 
-
-        System.out.println("Starting tests...");
+        // println progress bar...
+        System.out.println("Starting experiments...");
         // ------------- Integer test
         System.out.println("Integers...");
         runIntegerExperiment(UNC_I, Experiment_UNC_I, generalSeed, amountOfRetries, arraySizesIntegers, 2);
@@ -297,7 +298,7 @@ public class SorterExperiment {
         
 
         // ------------------ Save Results ------------------ \\
-        // Saving results was implemented by Copilot as well.
+        // Saving results was implemented by AI Copilot as well.
 
         String[] fileNames = {
             "integer_until_no_change.csv",
